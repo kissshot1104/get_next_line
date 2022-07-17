@@ -53,6 +53,24 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcpy(ptr + s1_len, (char *)s2, s2_len + 1);
 	return (ptr);
 }
+/*char	*ft_strjoin(char const *s1, char const *s2)
+{
+	size_t	s1_len;
+	size_t	s2_len;
+	char	*str;
+
+	if (!s1 || !s2)
+		return (0);
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	str = (char *)malloc(s1_len + s2_len + 1);
+	if (!str)
+		return (0);
+	ft_strlcpy(str, s1, s1_len + 1);
+	free((void *)s1);
+	ft_strlcpy(&str[s1_len], s2, s2_len + 1);		//메모리 레이크
+	return (str);
+}*/
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -83,6 +101,7 @@ char	*ft_strdup(const char *s1)
 	ft_strlcpy(ptr, s1, s1_length + 1);
 	return (ptr);
 }
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*str;
@@ -103,3 +122,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
+
