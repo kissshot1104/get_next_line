@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeapark <jeapark@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/19 16:07:20 by jeapark           #+#    #+#             */
-/*   Updated: 2022/07/19 20:00:47 by jeapark          ###   ########seoul.kr  */
+/*   Created: 2022/07/19 16:06:49 by jeapark           #+#    #+#             */
+/*   Updated: 2022/07/19 20:00:48 by jeapark          ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_strchr(const char *s, int c)
 {
